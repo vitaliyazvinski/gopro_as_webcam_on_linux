@@ -52,7 +52,8 @@ module_cmd_unload="modprobe -rf v4l2loopback"
 START_PATH="/gp/gpWebcam/START?res="
 # TODO: seems buggy atm, though
 STOP_PATH="/gp/gpWebcam/STOP"
-FOV_PATH="/gp/gpWebcam/SETTINGS?fov="
+# TODO: control the bitrate via parameter
+FOV_PATH="/gp/gpWebcam/SETTINGS?bitrate=6000000&fov="
 
 function run_args {
 
